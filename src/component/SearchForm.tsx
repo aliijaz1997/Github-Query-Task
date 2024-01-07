@@ -22,6 +22,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
       className="flex justify-between items-center space-x-4"
     >
       <input
+        name="search"
         className="border border-gray-300 rounded-md px-4 py-2 w-1/3"
         placeholder="Search"
         value={searchValue.current}
@@ -30,6 +31,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
       />
 
       <select
+        name="selectType"
         className="border border-gray-300 rounded-md px-4 py-2 w-1/3"
         value={type}
         onChange={(e) => onTypeSwitch(e)}
